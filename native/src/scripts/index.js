@@ -1,5 +1,8 @@
 var page = new pagination({
   container:'.pagination-container',
-  total:10
+  total:100,
+  callback:function (current) {
+    console.log(current)
+  }
 })
 

@@ -1,1 +1,1 @@
-"use strict";var page=new pagination({container:".pagination-container",total:10});
+"use strict";var page=new pagination({container:".pagination-container",total:100,callback:function(n){console.log(n)}});

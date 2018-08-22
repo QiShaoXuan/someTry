@@ -24,14 +24,45 @@ input{
 textarea{
   resize: none;
 }
-/*滚动条*/
-//::-webkit-scrollbar {
-//  width: 7px;
-//  height: 7px;
-//}
-//::-webkit-scrollbar-thumb {
-//  background-color: rgba(50, 50, 50, .3)
-//}
-//::-webkit-scrollbar-track {
-//  background-color: rgba(50, 50, 50, .1)
-//}
+body{
+  padding:25px;
+}
+
+.panel{
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  padding: 24px;
+  .showPanel{
+    margin-bottom:15px;
+  }
+}
+button{
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  border-color: #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+button.disable{
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #fff;
+  border-color: #ebeef5;
+}

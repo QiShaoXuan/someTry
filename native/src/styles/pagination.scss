@@ -1,6 +1,7 @@
 @import "basic";
 .pagination {
   box-sizing: border-box;
+  user-select: none;
   .pagination-item {
     cursor: pointer;
     display: inline-block;
@@ -8,7 +9,7 @@
     height: 34px;
     font-size: 14px;
     padding:0 4px;
-    color: #C6C7CC;
+    color: $disabled-color;
     text-align: center;
     line-height: 34px;
     font-weight: bold;
@@ -20,6 +21,10 @@
     font-weight: normal;
     height: 34px;
     line-height: 34px;
+    cursor: pointer;
+    &.disable{
+    color: $disabled-color;
+  }
   }
   .pagination-item:hover {
     color:$primary-color;
