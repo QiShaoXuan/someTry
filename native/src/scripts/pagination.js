@@ -34,7 +34,7 @@ class pagination {
   }
 
   setBullets() {
-    let bulletsArr = this.setBulletsArr(this.options.total, this.options.current, this.options.pageCount)
+    let bulletsArr = this.setBulletsArr(this.options.current, this.options.pageCount)
 
     let bullets = bulletsArr.length == 0 ? '' : this.options.hideOnSinglePage && bulletsArr.length == 1 ? '' : this.setBulletsDom(bulletsArr)
 
@@ -54,7 +54,7 @@ class pagination {
     return `<ul class="pagination">${domStr}</ul>`
   }
 
-  setBulletsArr(total, current, pageCount) {
+  setBulletsArr( current, pageCount) {
     var arr = []
     let pageSum = this.options.pageSum
     if (pageSum <= pageCount + 1) {
